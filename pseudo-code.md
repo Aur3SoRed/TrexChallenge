@@ -8,6 +8,8 @@ This it's my first project out of the bootcamp, I'm the unique worker and author
 
 [X] First commit
 
-[] Create HMTL/CSS/JS files
+[X] Create HMTL/CSS/JS files
 
 [] Do wireframes
+
+[] Struct the Kanban
