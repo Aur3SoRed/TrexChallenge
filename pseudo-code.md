@@ -12,4 +12,20 @@ This it's my first project out of the bootcamp, I'm the unique worker and author
 
 [] Do wireframes
 
-[] Struct the Kanban
+[X] Struct the Kanban
+
+[X] Do a simple t-rex
+
+[] Get it to jump
+
+[] Construct the obstacles and randomize
+
+[] Implement timer
+
+## STUPIS THINGS I RE-LEARN
+
+-The KeyCode for spacebar is nº32
+
+-I don't know why but it's no necessary the ; for the end of functions and variables in Vanila JS.
+
+-The limit for function is 150px, i dont know why

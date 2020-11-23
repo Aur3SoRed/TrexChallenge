@@ -6,14 +6,21 @@ document.addEventListener('DOMContentLoaded', () => {
       jump();
     }
   }
-  document.addEventListener('keyup', control);
+  document.addEventListener('keypress', control);
 
   function jump() {
     let position = 0;
     let chronoID = setInterval(function () {
+      // gravity
+      if (position === 150) {
+        console.log('stop');
+        position -= 30;
+        trex.style.bottom = position + 'px';
+      }
+      //for move
       console.log('theres a jump');
       position += 30;
       trex.style.bottom = position + 'px';
-    }, 30);
+    }, 20);
   }
 });
