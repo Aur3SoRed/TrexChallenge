@@ -22,13 +22,17 @@ This it's my first project out of the bootcamp, I'm the unique worker and author
 
 I think that I can finish my project yesterday, but right now I have a lot of things to resolve, well let's tried it today
 
-[] Construct the obstacles and randomize
+[X] Construct the obstacles and randomize
 
-[] Implement timer
+[X] Implement timer
 
 [] Draw wireframes
 
 [] Design the background
+
+[X] Game Over advertise
+
+[] Scoring game points
 
 ## STUPIS THINGS I RE-LEARN
 

@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
   const trex = document.querySelector('.trex');
   const grid = document.querySelector('.grid');
-  //const obstacle = document.querySelector('.obstacle');
+  const alert = document.getElementById('alert');
   let dive = false;
   let fall = 0.9;
+  let gameOver = false;
 
   function control(bar) {
     if (bar.keyCode === 32) {
@@ -45,10 +46,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function createObstacles() {
-    let randomTiming = Math.random() * 2000;
+    let randomTiming = Math.random() * 4500;
     let obstaclePosition = 1000;
     const obstacle = document.createElement('div');
-    obstacle.classList.add('obstacle');
+    if (!gameOver) obstacle.classList.add('obstacle');
     grid.appendChild(obstacle);
     console.log('works?');
     obstacle.style.left = obstaclePosition + 'px';
@@ -57,12 +58,17 @@ document.addEventListener('DOMContentLoaded', () => {
       //movement
       if (obstaclePosition > 0 && obstaclePosition < 60 && position < 60) {
         clearInterval(chronoID);
-        alert('Game Over');
+        alert.innerHTML = 'Game Over';
+        gameOver = true;
+        //remove children
+        while (grid.firstChild) {
+          grid.removeChild(grid.lastChild);
+        }
       }
       obstaclePosition -= 10;
       obstacle.style.left = obstaclePosition + 'px';
     }, 20);
-    setTimeout(createObstacles, randomTiming);
+    if (!gameOver) setTimeout(createObstacles, randomTiming);
   }
   createObstacles();
 });
