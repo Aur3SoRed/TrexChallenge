@@ -45,6 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function createObstacles() {
+    let randomTiming = Math.random() * 2000;
     let obstaclePosition = 1000;
     const obstacle = document.createElement('div');
     obstacle.classList.add('obstacle');
@@ -54,13 +55,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let chronoID = setInterval(function () {
       //movement
-      if (obstaclePosition === 0) {
+      if (obstaclePosition > 0 && obstaclePosition < 60 && position < 60) {
         clearInterval(chronoID);
         alert('Game Over');
       }
       obstaclePosition -= 10;
       obstacle.style.left = obstaclePosition + 'px';
     }, 20);
+    setTimeout(createObstacles, randomTiming);
   }
   createObstacles();
 });
