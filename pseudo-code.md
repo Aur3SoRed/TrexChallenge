@@ -37,3 +37,6 @@ I think that I can finish my project yesterday, but right now I have a lot of th
 -I don't know why but it's no necessary the ; for the end of functions and variables in Vanila JS.
 
 -The limit for function is 150px, i dont know why
+
+-Bottom is a CSS atribute with a value of 0px you can situate the element into the baseline of screen, perfect for the footer.
+-Its so important do a clear diference between singular and plural for objects specially into the function with you create them.
