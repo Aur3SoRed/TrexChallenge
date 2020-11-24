@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const trex = document.querySelector('.trex');
+  const grid = document.querySelector('.grid');
+  //const obstacle = document.querySelector('.obstacle');
   let dive = false;
   let fall = 0.9;
 
@@ -41,4 +43,14 @@ document.addEventListener('DOMContentLoaded', () => {
       console.log(trex.style.bottom);
     }, 20);
   }
+
+  function createObstacles() {
+    let obstaclePosition = 1000;
+    const obstacle = document.createElement('div');
+    obstacle.classList.add('obstacle');
+    grid.appendChild(obstacle);
+    console.log('works?');
+    obstacle.style.left = obstaclePosition + 'px';
+  }
+  createObstacles();
 });
