@@ -16,11 +16,19 @@ This it's my first project out of the bootcamp, I'm the unique worker and author
 
 [X] Do a simple t-rex
 
-[] Get it to jump
+[X] Get it to jump
+
+## 24N (AFTERNOON)
+
+I think that I can finish my project yesterday, but right now I have a lot of things to resolve, well let's tried it today
 
 [] Construct the obstacles and randomize
 
 [] Implement timer
+
+[] Draw wireframes
+
+[] Design the background
 
 ## STUPIS THINGS I RE-LEARN
 
