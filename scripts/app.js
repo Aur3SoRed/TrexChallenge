@@ -2,8 +2,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const trex = document.querySelector('.trex');
   const grid = document.querySelector('.grid');
   const alert = document.getElementById('alert');
+  const resultDisplay = document.querySelector('.span');
   let dive = false;
   let fall = 0.9;
+  let addScore = 0;
   let gameOver = false;
 
   function control(bar) {
@@ -32,12 +34,16 @@ document.addEventListener('DOMContentLoaded', () => {
           position -= 5;
           count--;
           position = position * fall;
+          console.log('suma');
+          addScore += 6;
+          console.log('y sigue');
           trex.style.bottom = position + 'px';
         }, 20);
       }
       //for move
       console.log('theres a jump');
       position += 30;
+
       count++;
       position = position * fall;
       trex.style.bottom = position + 'px';
@@ -45,13 +51,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 20);
   }
 
+  /////////////SCORING///////
+  resultDisplay.textContent = addScore;
+  /////////////////////////////////
+
   function createObstacles() {
     let randomTiming = Math.random() * 4500;
     let obstaclePosition = 1000;
     const obstacle = document.createElement('div');
     if (!gameOver) obstacle.classList.add('obstacle');
     grid.appendChild(obstacle);
-    console.log('works?');
+    //console.log('works?');
     obstacle.style.left = obstaclePosition + 'px';
 
     let chronoID = setInterval(function () {
