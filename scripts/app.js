@@ -35,8 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
           count--;
           position = position * fall;
           console.log('suma');
-          addScore += 6;
-          console.log('y sigue');
+
           trex.style.bottom = position + 'px';
         }, 20);
       }
@@ -46,12 +45,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
       count++;
       position = position * fall;
+
       trex.style.bottom = position + 'px';
       console.log(trex.style.bottom);
     }, 20);
   }
 
   /////////////SCORING///////
+  addScore = 7;
+  console.log('y sigue');
   resultDisplay.textContent = addScore;
   /////////////////////////////////
 
