@@ -17,3 +17,11 @@ body {
   background-color: chartreuse;
   bottom: 0px;
 }
+
+.span {
+  position: absolute;
+  font-size: medium;
+  font-style: italic;
+  font-weight: 100;
+  background-color: violet;
+}
