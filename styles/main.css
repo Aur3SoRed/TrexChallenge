@@ -6,7 +6,9 @@ body {
   position: absolute;
   width: 75px;
   height: 75px;
-  background-color: purple;
+  background-repeat: no-repeat;
+  contain: content;
+  background-image: url('../docs/dinoi-image.png');
   bottom: 0px;
 }
 
@@ -14,7 +16,9 @@ body {
   position: absolute;
   width: 75px;
   height: 75px;
-  background-color: chartreuse;
+  background-repeat: no-repeat;
+  contain: content;
+  background-image: url('../docs/cactus.png');
   bottom: 0px;
 }
 
@@ -23,5 +27,5 @@ body {
   font-size: medium;
   font-style: italic;
   font-weight: 100;
-  background-color: violet;
+  background-color: black;
 }

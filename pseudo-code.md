@@ -34,7 +34,17 @@ I think that I can finish my project yesterday, but right now I have a lot of th
 
 [] Scoring game points
 
-## STUPIS THINGS I RE-LEARN
+## 14D (AFTERNOON)
+
+I desplace this project because this weeks I have interviews, administration issues and other projects with my partners, so I have to let this in a third grade of interest.
+
+[X] Change the design without animations
+
+[] Do animations
+
+[] Implement score
+
+## STUPIDS THINGS I RE-LEARN
 
 -The KeyCode for spacebar is nº32
 
